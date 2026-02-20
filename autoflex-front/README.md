@@ -1,16 +1,36 @@
-# React + Vite
+Autoflex Manager - Production Intelligence System
+This project was developed as a technical assessment for Projedata. It consists of a full-stack web application designed to manage raw materials, products, and calculate production capacity based on available stock.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ Features
+Full CRUD for Products & Raw Materials: Register, list, update, and delete components and final goods.
 
-Currently, two official plugins are available:
+Material Association: Link specific raw materials to products with defined required quantities.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Production Intelligence: An algorithm that analyzes current stock levels and recipes to suggest how many units of each product can be manufactured.
 
-## React Compiler
+ Tech Stack
+Backend: .NET 8 Web API following the Repository Pattern and Domain-Driven Design (DDD) principles.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Frontend: React with modern Hooks and Axios for seamless API integration.
 
-## Expanding the ESLint configuration
+Database: Relational Database managed via Entity Framework Core.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Architecture: Decoupled Client-Server architecture.
+
+Project Structure
+The repository is organized as a monorepo:
+
+/Autoflex.Api: The entry point for the backend service.
+
+/Autoflex.Domain: Core entities and business logic.
+
+/Autoflex.Infrastructure: Data persistence and database context.
+
+/autoflex-front: The React frontend application.
+
+⚙️ How to Run
+Backend: Open AutoflexManager.slnx in Visual Studio and run the project.
+
+Frontend: Navigate to /autoflex-front, run npm install and then npm run dev.
+
+API Access: The frontend is configured to communicate with the API at https://localhost:7154/api.
