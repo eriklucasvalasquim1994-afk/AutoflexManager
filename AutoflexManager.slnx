@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Autoflex.Api/Autoflex.Api.csproj" />
+  <Project Path="Autoflex.Application/Autoflex.Application.csproj" />
+  <Project Path="Autoflex.Domain/Autoflex.Domain.csproj" />
+  <Project Path="Autoflex.Infrastructure/Autoflex.Infrastructure.csproj" />
+</Solution>
